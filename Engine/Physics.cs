@@ -170,4 +170,5 @@ namespace FlightSimulatorWPF
         public double GetAcaccelerationHeight() => _speed_height;
 
     }
+    
 }
