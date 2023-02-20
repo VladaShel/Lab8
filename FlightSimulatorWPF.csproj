@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Blue_sky.png" />
+    <None Remove="Resources\cabin.png" />
+    <None Remove="Resources\DesertDesignElement1.png" />
+    <None Remove="Resources\deserted-miscellaneous.png" />
+    <None Remove="Resources\home_plane.png" />
+    <None Remove="Resources\home_plane_2.png" />
+    <None Remove="Resources\Mountain.png" />
+    <None Remove="Resources\plane.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bin\Debug\net6.0-windows\Resources\DesertDesignElement1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Blue_sky.png" />
+    <Resource Include="Resources\cabin.png" />
+    <Resource Include="Resources\DesertDesignElement1.png" />
+    <Resource Include="Resources\deserted-miscellaneous.png" />
+    <Resource Include="Resources\home_plane.png" />
+    <Resource Include="Resources\home_plane_2.png" />
+    <Resource Include="Resources\Mountain.png" />
+    <Resource Include="Resources\plane.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

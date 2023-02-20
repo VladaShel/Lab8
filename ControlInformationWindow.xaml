@@ -1,0 +1,17 @@
+﻿<Window x:Class="FlightSimulatorWPF.ControlInformationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlightSimulatorWPF"
+        mc:Ignorable="d"
+        Title="Информация об управлении" Height="316" Width="520" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Управление" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="17"/>
+        <Label Content="Стрелки вправо/влево - наклон самолета для поворота" HorizontalAlignment="Left" Margin="24,60,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <Label Content="Стрелки вперед/назад - наклон самолета вверх/вниз для изменения высоты" HorizontalAlignment="Left" Margin="24,88,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <Label Content="Enter/Backspace - изменение мощности двигателей" HorizontalAlignment="Left" Margin="24,117,0,0" VerticalAlignment="Top" FontSize="13"/>
+        <Label Content="Tab - убрать/выдвинуть шасси" HorizontalAlignment="Left" Margin="24,144,0,0" VerticalAlignment="Top" FontSize="13"/>
+
+    </Grid>
+</Window>

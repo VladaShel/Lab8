@@ -1,0 +1,18 @@
+﻿<Window x:Class="FlightSimulatorWPF.SimulationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlightSimulatorWPF"
+        mc:Ignorable="d"
+        Title="Окно симуляции" Height="739" Width="1216" ResizeMode="NoResize" KeyDown="Window_KeyDown" Closed="Window_Closed">
+    <Grid Margin="-268,-166,-426,-274" >
+        <Canvas x:Name="ViewCanvas" Margin="-44,-33,66,10">
+        </Canvas>
+
+        <Image HorizontalAlignment="Left" Height="686" VerticalAlignment="Top" Width="1164" Source="/Resources/cabin.png" Canvas.Left="202" Canvas.Top="112" Margin="318,234,0,0"/>
+        <Canvas x:Name="CabinPanel" Height="236" Width="456" Canvas.Left="556" Canvas.Top="369" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="672,582,0,0"/>
+        <Label x:Name="AccidentLabel" Content="Авария. Симуляция прервана." HorizontalAlignment="Left" Margin="584,274,0,0" VerticalAlignment="Top" FontSize="45" Background="Transparent" Foreground="Red"/>
+        <Label Content="CapsLock - управление" Canvas.Left="1171" Canvas.Top="217" FontSize="25" Height="97" Width="341" Margin="1190,177,380,889"/>
+    </Grid>
+</Window>
